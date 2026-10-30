@@ -2,6 +2,10 @@ title: Cat w/ Eyebrows
 description: Things I build in my own time, and what they teach me.
 url: https://catwitheyebrows.github.io
 repository: CatWithEyebrows/CatWithEyebrows.github.io
+timezone: America/Sao_Paulo
+permalink: /:title/
+# Posts dated in the future stay hidden until a build on or after their date
+future: false
 
 remote_theme: mmistakes/minimal-mistakes@4.26.2
 minimal_mistakes_skin: dark

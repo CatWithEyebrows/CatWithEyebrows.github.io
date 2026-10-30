@@ -1,9 +1,9 @@
 ---
-date: 2026-10-30 12:00:00 +0000
+date: 2026-11-03 00:00:00 -0300
 title: "False friends: finding bugs by porting a library"
 ---
 
-In [the first post](/2026/10/30/go-has-no-undefined.html), I described how I'm learning Go: porting the helpers from Qlik's TypeScript library, [@qlik/api](https://github.com/qlik-oss/qlik-api-ts), onto [my fork](https://github.com/CatWithEyebrows/enigma-go) of [enigma-go](https://github.com/qlik-oss/enigma-go), Qlik's Go client. 
+In [the first post](/go-has-no-undefined/), I described how I'm learning Go: porting the helpers from Qlik's TypeScript library, [@qlik/api](https://github.com/qlik-oss/qlik-api-ts), onto [my fork](https://github.com/CatWithEyebrows/enigma-go) of [enigma-go](https://github.com/qlik-oss/enigma-go), Qlik's Go client. 
 
 Anyone who has learned a second language knows "false friends": words that look like a word you know but mean something else. The Portuguese *pretender* means "to intend", not "to pretend". You only catch them by checking, and it pays off twice: you learn a new word, and you look at the one you knew a little more carefully.
 

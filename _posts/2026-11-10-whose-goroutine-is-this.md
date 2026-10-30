@@ -1,9 +1,9 @@
 ---
-date: 2026-10-30 13:00:00 +0000
+date: 2026-11-10 00:00:00 -0300
 title: "Whose goroutine is this? A grammar JavaScript doesn't have"
 ---
 
-This series is about learning Go by porting the helpers from Qlik's TypeScript library, [@qlik/api](https://github.com/qlik-oss/qlik-api-ts), onto [my fork](https://github.com/CatWithEyebrows/enigma-go) of [enigma-go](https://github.com/qlik-oss/enigma-go), Qlik's Go client. The method borrows from learning spoken languages: use what you know to infer what you don't, then check whether the pattern makes sense. [The first post](/2026/10/30/go-has-no-undefined.html) covered what Go makes you write down. [The second](/2026/10/30/false-friends.html) covered the bugs that turned up where the JavaScript and the Go disagreed.
+This series is about learning Go by porting the helpers from Qlik's TypeScript library, [@qlik/api](https://github.com/qlik-oss/qlik-api-ts), onto [my fork](https://github.com/CatWithEyebrows/enigma-go) of [enigma-go](https://github.com/qlik-oss/enigma-go), Qlik's Go client. The method borrows from learning spoken languages: use what you know to infer what you don't, then check whether the pattern makes sense. [The first post](/go-has-no-undefined/) covered what Go makes you write down. [The second](/false-friends/) covered the bugs that turned up where the JavaScript and the Go disagreed.
 
 This one is about where the method stops working.
 

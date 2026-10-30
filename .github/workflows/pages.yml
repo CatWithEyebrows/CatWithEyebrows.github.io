@@ -1,0 +1,39 @@
+name: Build and deploy the site
+
+on:
+  push:
+    branches: [main]
+  # Rebuild daily so posts dated in the future appear on their date
+  # (03:10 UTC is 00:10 in São Paulo, the second run is a fallback)
+  schedule:
+    - cron: "10 3 * * *"
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - uses: actions/jekyll-build-pages@v1
+      - uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
