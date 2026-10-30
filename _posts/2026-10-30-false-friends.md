@@ -142,4 +142,4 @@ The port forced a decision at every place the two languages disagree, and each d
 
 The fork has all of these fixed, with unit tests against a fake engine and integration tests against a real one.
 
-**The next post** is about a bug the port found in enigma-go itself, which Go's race detector flagged the first time I ran the tests. It had been there since the library's first commit.
+**The next post** is about a bug the port found in enigma-go itself, which Go's race detector confirmed in a single test run. It had been there since the library's first commit.
