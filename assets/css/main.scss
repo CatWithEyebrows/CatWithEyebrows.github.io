@@ -1,0 +1,43 @@
+---
+# The front matter makes Jekyll process this file
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// The theme scales text from 16px up to 22px on wide screens, smaller here
+html {
+  font-size: 14px;
+
+  @include breakpoint($medium) {
+    font-size: 16px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 17px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px;
+  }
+}
+
+
+// Post descriptions on the home page keep the theme's original size
+.archive__item-excerpt {
+  font-size: 12px;
+
+  @include breakpoint($medium) {
+    font-size: 13.5px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 15px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 16.5px;
+  }
+}

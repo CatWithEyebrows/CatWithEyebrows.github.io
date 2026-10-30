@@ -1,0 +1,51 @@
+title: Cat w/ Eyebrows
+description: Things I build in my own time, and what they teach me.
+url: https://catwitheyebrows.github.io
+repository: CatWithEyebrows/CatWithEyebrows.github.io
+
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: dark
+
+author:
+  name: Cat w/ Eyebrows
+  avatar: https://github.com/CatWithEyebrows.png
+  bio: Things I build in my own time, and what they teach me.
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/CatWithEyebrows
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/juliocmendo/
+
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/CatWithEyebrows
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/juliocmendo/
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      share: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
